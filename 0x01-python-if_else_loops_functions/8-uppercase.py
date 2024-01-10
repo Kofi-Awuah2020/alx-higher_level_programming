@@ -7,4 +7,4 @@ def uppercase(str):
             new_str += "{0:c}".format(ascii_value - 32)
         else:
             new_str += "{0:s}".format(char)
-    print(new_str)
+    print("{:s}".format(new_str))
