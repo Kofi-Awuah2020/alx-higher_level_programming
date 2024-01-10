@@ -2,5 +2,8 @@
 def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         for columns in row:
-            print("{:d}".format(columns), end=" ")
+            if columns is not row[len(row) - 1]: #if columns is last element 
+                print("{:d}".format(columns), end=" ")
+            else:
+                print("{:d}".format(columns), end="")
         print()
