@@ -3,5 +3,5 @@ import py_compile
 import os
 
 python_file = os.getenv('PYFILE')
-print(f"Compiling {python_file}...")
+print(f"Compiling {python_file} ...")
 py_compile.compile(python_file, cfile=f"{python_file}c")
