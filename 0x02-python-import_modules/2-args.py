@@ -9,7 +9,7 @@ def main():
     else:
         if length == 1:
             print(f"{length} argument:")
-        else: 
+        else:
             print(f"{length} arguments:")
         for index, argument in enumerate(sys.argv):
             if index == 0:
