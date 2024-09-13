@@ -3,11 +3,14 @@ import sys
 
 
 def main():
-    length = len(sys.argv)
-    if length <= 1:
-        print(f"{length - 1} arguments.")
+    length = len(sys.argv) - 1
+    if length == 0:
+        print(f"{length} arguments.")
     else:
-        print(f"{length - 1} arguments:")
+        if length == 1:
+            print(f"{length} argument:")
+        else: 
+            print(f"{length} arguments:")
         for index, argument in enumerate(sys.argv):
             if index == 0:
                 continue
