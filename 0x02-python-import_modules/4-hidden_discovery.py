@@ -4,7 +4,7 @@ import hidden_4
 
 def main():
     names = dir(hidden_4)
-    filtered_names = [name for name in names if not name.starstwith('__')]
+    filtered_names = [name for name in names if not name.startswith('__')]
     sorted_names = sorted(filtered_names)
 
     for name in sorted_names:
