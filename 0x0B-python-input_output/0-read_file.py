@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""A module with a function that reads form a file"""
+
 
 def read_file(filename=""):
     """
