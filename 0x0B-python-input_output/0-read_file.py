@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""A module with a function that reads form a file"""
+"""A module with a function that reads from a file"""
 
 
 def read_file(filename=""):
@@ -11,5 +11,5 @@ def read_file(filename=""):
     filename(str): The name of the file to be read
     """
     with open(filename, mode="r", encoding="utf-8") as file:
-        content = file.read()
-        print(content)
+        for line in file:
+            print(line)
